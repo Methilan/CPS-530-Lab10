@@ -1,24 +1,28 @@
-import logo from './logo.svg';
+import React from 'react';
+import Navbar from './components/Navbar';
+import What from './components/What';
+import Creating from './components/Creating'
+import Problem from './components/Problem'
 import './App.css';
+import './components/What.css';
+import './components/Navbar.css';
+import './components/Creating.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <h1 className="mainHeading">React Webpage</h1>
+    <What />
+    <Navbar />
+    <Creating />
+    <Problem />
+    <footer>
+    <p>Created By: Methilan Thileepan</p>
+    </footer>
+
+
+    </>
   );
 }
 
